@@ -30,7 +30,7 @@ const ContactPage = () => {
         throw new Error('Failed to send message');
       }
     } catch (error) {
-      setMessage('Failed to send message. Please try again.');
+      setMessage('Failed to send message. Please try again.' + error);
     } finally {
       setIsSubmitting(false);
     }
