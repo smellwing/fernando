@@ -2,7 +2,7 @@
 "use client";
 // Importa React y los hooks que se van a usar
 import React, { useEffect, useState } from 'react';
-import { getBingImageOfTheDay } from '../lib/bingImage';
+import { getBingImageOfTheDay } from '../lib/home/bingImage';
 
 // Define la pagina Home a partir de un componente funcional genérico de React
 const Home: React.FC = () => {
@@ -25,6 +25,11 @@ const Home: React.FC = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 text-center text-white">
         <h1 className="text-5xl font-bold">Bienvenido a Fernando</h1>
+        <nav className="flex justify-center space-x-6">
+          <a href="/contacto" className="hover:text-gray-300 transition-colors">Contacto</a>
+          <a href="/nosotros" className="hover:text-gray-300 transition-colors">Nosotros</a>
+          <a href="/servicios" className="hover:text-gray-300 transition-colors">Servicios</a>
+        </nav>
       </div>
     </div>
   );
