@@ -6,6 +6,7 @@ export default function Header() {
         <a href="/contacto" className="hover:text-gray-300 transition-colors">Contacto</a>
         <a href="/nosotros" className="hover:text-gray-300 transition-colors">Nosotros</a>
         <a href="/servicios" className="hover:text-gray-300 transition-colors">Servicios</a>
+        <a href="/historia" className="hover:text-gray-300 transition-colors">Historia</a>
       </nav>
     </div>
   );
